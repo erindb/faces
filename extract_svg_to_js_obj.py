@@ -10,7 +10,7 @@ def multiline(string, indent):
   return ret_string + '"'
 
 identical = ['hair', 'bangs', 'bigreflect1', 'bigreflect2', 'smallreflect1',
-             'smallreflect2', 'pupil1', 'pupil2', 'face', 'neck', 'hair', 'nose']
+             'smallreflect2', 'pupil1', 'pupil2', 'face', 'neck', 'hair']
 
 doc = minidom.parse("more_manga_faces.svg")  # parseString also exists
 layers = [ layer for layer in doc.getElementsByTagName('g')]
@@ -22,7 +22,7 @@ for layer in doc.getElementsByTagName('g'):
   print "var", layer_id, '= {',
   for i in range(len(pieces)):
     piece = pieces[i]
-    p_id = piece[1][1:]
+    p_id = piece[1][1:].split("-")[0]
     indent = len(p_id) + 4 + layer_indent
     if (i == 0):
       ind = ''
