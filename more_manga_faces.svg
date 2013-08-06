@@ -15,7 +15,7 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="more_manga_faces.svg"
-   inkscape:export-filename="/home/feste/Code/cocolab/Faces/surprised.png"
+   inkscape:export-filename="/home/feste/Code/cocolab/Faces/expressions/happy.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -29,9 +29,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="318.55825"
-     inkscape:cy="332.67385"
+     inkscape:cy="330.67385"
      inkscape:document-units="px"
-     inkscape:current-layer="svg2"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1440"
      inkscape:window-height="843"
@@ -46,12 +46,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     style="display:none"
+     style="display:inline"
      inkscape:label="happy"
      id="happy"
      inkscape:groupmode="layer">
@@ -641,6 +641,24 @@
        sodipodi:nodetypes="cccc" />
   </g>
   <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="hair"
+     style="display:none">
+    <path
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="5hair-6-7"
+       d="M 153,44.000003 C 351.57725,-32.826139 251.41594,199.07871 301,287 c 18.75869,39.08077 27.09757,41.77239 38,52 C 281.7128,370.01983 57.88432,408.30069 5,339 23.653037,322.38775 37.64059,317.22005 37,288 48.600588,213.6893 -20.74876,-9.6550324 153,44.000003 z"
+       style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       sodipodi:nodetypes="ccccccccccccc"
+       inkscape:connector-curvature="0"
+       id="5hair-6-7-6"
+       d="M 154,70.000003 C 280.57725,78.173861 313.41594,-0.92129 395,194 c -104.82258,-36.8336 -46.54532,48.77846 -19,79 -22.79993,-3.03343 -26.32207,3.66278 -39.89597,6.42351 1.26945,5.13386 30.37914,38.09932 31.23364,47.45431 0.78342,8.57679 -66.64767,-14.67843 -66.36682,-4.87698 0.68116,23.77239 -0.33223,47.87818 -4.08965,56.46195 -8.23347,-19.00578 -136.96976,-41.77848 -152.94216,-46.69007 -32.06257,8.59919 -59.087536,22.51364 -74.961198,39.94806 -7.654596,-2.70306 0.124949,-44.56767 -18.029559,-65.93543 C 22.305314,312.68643 14.564598,316.19167 -12,329 23.136757,261.8314 56.856537,185.45932 -60,229 -3.297248,75.52507 26.643076,89.068582 154,70.000003 z"
+       style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+  </g>
+  <g
      style="display:none"
      inkscape:label="maleDisappointedEyes"
      id="g3176"
@@ -727,14 +745,8 @@
   <g
      inkscape:groupmode="layer"
      id="hair"
-     inkscape:label="hair"
-     style="display:inline">
-    <path
-       style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="M 152,36.999995 C 85.308249,-16.140726 81.595242,-11.11992 45,-22 52.881369,9.7e-4 59.278434,31.3719 51.5,56 42.410849,62.81847 -62.343476,115.52609 -77,125.5 c 27.414499,5.0974 81.277697,13.85283 89.5,21 -7.776545,10.44165 3,107 3,107 3.92641,-23.46565 47.27727,-99.31422 62,-106.5 -1.67813,10.30098 1.30108,26.34267 14,37.5 0.65885,-7.76747 64.85145,-66.48368 88,-69.00001 23.01105,-2.50138 149.53475,61.93052 185.13604,120.22793 C 357.42791,185.08878 321.68008,143.7139 316.5,125.49999 334.17928,120.12608 393.18628,80.26463 431.9835,68.93934 379.59337,67.26278 316.24548,75.27597 310.5,68.99999 c 4.14807,-23.2657 29.29981,-92.11202 29.29981,-92.11202 L 232.89903,50.69933 209,-50 c 0,0 -25.85656,58.8105776 -57,86.999995 z"
-       id="spikey"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccscccccccc" />
+     inkscape:label="bangs"
+     style="display:none">
     <path
        sodipodi:nodetypes="ccccccccscccccscc"
        inkscape:connector-curvature="0"
@@ -747,6 +759,12 @@
        id="flat"
        d="M 158,62.999999 C 21.308251,17.85928 10.095242,188.38008 41,261 52.381369,241.00097 46.278434,150.8719 65,148 c -12.089151,12.81847 5.156524,49.52609 9,65 -6.585501,-7.9026 9.777697,-103.14717 18,-96 -7.776545,10.44165 5,35 5,35 3.92641,-23.46565 12.27727,-41.81422 27,-49 4.32187,16.80098 -4.19892,26.84267 16,52 -7.84115,-2.76747 8.21542,-57.212006 20,-63.000006 6.60524,-3.24417 35.03475,38.930516 23.63604,61.727926 C 195.42791,141.58878 197.18008,112.2139 200,91.999994 c 12.67928,20.626086 38.18628,42.764636 24.4835,67.939346 19.35987,-20.92656 21.76198,-34.41337 20.5165,-45.93935 19.64807,-2.7657 39.69203,112.687 41.54981,122.63798 1.46243,7.83334 14.49625,-83.70053 12.09922,-86.18864 C 296.95728,148.6933 319.79938,213.39572 321,226 352.9666,117.7081 245.97365,-4.1998251 158,62.999999 z"
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 152,36.999995 C 85.308249,-16.140726 81.595242,-11.11992 45,-22 52.881369,9.7e-4 59.278434,31.3719 51.5,56 42.410849,62.81847 -62.343476,115.52609 -77,125.5 c 27.414499,5.0974 81.277697,13.85283 89.5,21 -7.776545,10.44165 3,107 3,107 3.92641,-23.46565 47.27727,-99.31422 62,-106.5 -1.67813,10.30098 1.30108,26.34267 14,37.5 0.65885,-7.76747 64.85145,-66.48368 88,-69.00001 23.01105,-2.50138 149.53475,61.93052 185.13604,120.22793 C 357.42791,185.08878 321.68008,143.7139 316.5,125.49999 334.17928,120.12608 393.18628,80.26463 431.9835,68.93934 379.59337,67.26278 316.24548,75.27597 310.5,68.99999 c 4.14807,-23.2657 29.29981,-92.11202 29.29981,-92.11202 L 232.89903,50.69933 209,-50 c 0,0 -25.85656,58.8105776 -57,86.999995 z"
+       id="spikey"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccscccccccc" />
   </g>
   <g
      inkscape:groupmode="layer"
