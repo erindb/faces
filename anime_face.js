@@ -548,10 +548,15 @@ function drawFace(paper, expression1, expression2, morphProp) {
   for (var i=0; i<pieces.length; i++) {
     var p=pieces[i]
     var path1 = expressions[expression1][p];
-    var path2 = expressions[expression2][p];
-    var interPath = intermediate(path1, path2, morphProp);
-    var h = paper.path(interPath);
+    if (expression2 == null) {
+      var h = paper.path(path1);
+    } else {
+      var path2 = expressions[expression2][p];
+      var interPath = intermediate(path1, path2, morphProp);
+      var h = paper.path(interPath);
+    }
     attr(h, colors[p]);
+    }
   }
 }
 
