@@ -556,7 +556,6 @@ function drawFace(paper, expression1, expression2, morphProp) {
       var h = paper.path(interPath);
     }
     attr(h, colors[p]);
-    }
   }
 }
 
