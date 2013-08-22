@@ -1,3 +1,5 @@
+var faceBoxWidth = 380;
+
 function attr(obj, c) {
   obj.attr({"stroke":"black", "stroke-width":1, "fill":c});
 }
@@ -559,34 +561,6 @@ function drawOneFace(paper, expression1, expression2, morphProp) {
   }
 }
 
-function translate(pathString, xpos, ypos) {
-  var segments = pathString.split(" ");
-  var ret_string = segments[0]; //M
-  var old_xpos = 150;//segments[1];
-  var old_ypos = 150;//segments[2];
-  var xdiff = xpos - old_xpos;
-  var ydiff = ypos - old_ypos;
-  var type = "x";
-  for (var i=1; i<(segments.length); i++) {
-    var seg = segments[i];
-    if (type == "x") {
-      if (seg == "Q" || seg == "L" || seg == "C" || seg == "Z" || seg == "z") {
-        ret_string += (" " + seg);
-        type = "x"
-      } else {
-        var x = (parseFloat(seg)+xdiff).toString();
-        ret_string += (" " + x);
-        type = "y";
-      }
-    } else if (type == "y") {
-      var y = (parseFloat(seg)+ydiff).toString();
-        ret_string += (" " + y);
-      type = "x";
-    }
-  }
-  return ret_string;
-}
-
 function intermediate(from, to, pos) {
   var fromCurve = Raphael.path2curve(from);
   var toCurve = Raphael.path2curve(to);
@@ -612,16 +586,17 @@ function intermediate(from, to, pos) {
   return now.join(S);
 }
 
-function drawFace(paper, xpos, ypos, scale, expression1, expression2, morphProp) {
+function drawFace(paper, xpos, ypos, width, expression1, expression2, morphProp) {
+  var scale = width/faceBoxWidth;
   for (var i=0; i<pieces.length; i++) {
     var p=pieces[i]
     var path1 = expressions[expression1][p];
     if (expression2 == null) {
-      var mypath = path1;//translate(path1, xpos, ypos);
+      var mypath = path1;
     } else {
       var path2 = expressions[expression2][p];
       var interPath = intermediate(path1, path2, morphProp);
-      var mypath = interPath;//translate(interPath, xpos, ypos);
+      var mypath = interPath;
     }
     var h = paper.path(mypath);
     attr(h, colors[p])
