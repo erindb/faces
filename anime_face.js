@@ -544,7 +544,7 @@ var expressions = { "happy":happy, "sad":sad, "angry":angry, "disgusted":disgust
                     "content":content, "disappointed":disappointed,
                     "surprised":surprised };
 
-function drawFace(paper, expression1, expression2, morphProp) {
+function drawOneFace(paper, expression1, expression2, morphProp) {
   for (var i=0; i<pieces.length; i++) {
     var p=pieces[i]
     var path1 = expressions[expression1][p];
@@ -557,6 +557,36 @@ function drawFace(paper, expression1, expression2, morphProp) {
     }
     attr(h, colors[p]);
   }
+}
+
+function translate(pathString, xpos, ypos) {
+  console.log(pathString);
+  var segments = pathString.split(" ");
+  var ret_string = segments[0]; //M
+  var old_xpos = 150;//segments[1];
+  var old_ypos = 150;//segments[2];
+  var xdiff = xpos - old_xpos;
+  var ydiff = ypos - old_ypos;
+  var type = "x";
+  for (var i=1; i<(segments.length); i++) {
+    var seg = segments[i];
+    if (type == "x") {
+      if (seg == "Q" || seg == "L" || seg == "C" || seg == "Z" || seg == "z") {
+        ret_string += (" " + seg);
+        type = "x"
+      } else {
+        var x = (parseFloat(seg)+xdiff).toString();
+        ret_string += (" " + x);
+        type = "y";
+      }
+    } else if (type == "y") {
+      var y = (parseFloat(seg)+ydiff).toString();
+        ret_string += (" " + y);
+      type = "x";
+    }
+  }
+  console.log(ret_string);
+  return ret_string;
 }
 
 function intermediate(from, to, pos) {
@@ -582,4 +612,20 @@ function intermediate(from, to, pos) {
     now[i] = now[i].join(S);
   }
   return now.join(S);
+}
+
+function drawFace(paper, expression1, expression2, morphProp, xpos, ypos) {
+  for (var i=0; i<pieces.length; i++) {
+    var p=pieces[i]
+    var path1 = expressions[expression1][p];
+    if (expression2 == null) {
+      var mypath = translate(path1, xpos, ypos);
+    } else {
+      var path2 = expressions[expression2][p];
+      var interPath = intermediate(path1, path2, morphProp);
+      var mypath = translate(interPath, xpos, ypos);
+    }
+    var h = paper.path(mypath);
+    attr(h, colors[p]);
+  }
 }
