@@ -13,9 +13,11 @@
 
 <script>
 var p1 = Raphael(10, 50, 500, 500);
-drawOneFace(p1, "content", "sad", 0.5);
-var p2 = Raphael(510, 50, 750, 750);
-drawFace(p2, "angry", "sad", 0.5, 300, 300);
+drawOneFace(p1, "happy");
+var p2 = Raphael(300, 0, 750, 750);
+drawFace(p2, 0, 0, 0.2, "sad", "content", 0.4);
+drawFace(p2, 80, 80, 0.5, "sad", "content", 0.7);
+drawFace(p2, 250, 250, 1, "sad", "content", 1);
 </script>
 
 </body>

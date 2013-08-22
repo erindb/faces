@@ -560,7 +560,6 @@ function drawOneFace(paper, expression1, expression2, morphProp) {
 }
 
 function translate(pathString, xpos, ypos) {
-  console.log(pathString);
   var segments = pathString.split(" ");
   var ret_string = segments[0]; //M
   var old_xpos = 150;//segments[1];
@@ -585,7 +584,6 @@ function translate(pathString, xpos, ypos) {
       type = "x";
     }
   }
-  console.log(ret_string);
   return ret_string;
 }
 
@@ -614,18 +612,19 @@ function intermediate(from, to, pos) {
   return now.join(S);
 }
 
-function drawFace(paper, expression1, expression2, morphProp, xpos, ypos) {
+function drawFace(paper, xpos, ypos, scale, expression1, expression2, morphProp) {
   for (var i=0; i<pieces.length; i++) {
     var p=pieces[i]
     var path1 = expressions[expression1][p];
     if (expression2 == null) {
-      var mypath = translate(path1, xpos, ypos);
+      var mypath = path1;//translate(path1, xpos, ypos);
     } else {
       var path2 = expressions[expression2][p];
       var interPath = intermediate(path1, path2, morphProp);
-      var mypath = translate(interPath, xpos, ypos);
+      var mypath = interPath;//translate(interPath, xpos, ypos);
     }
     var h = paper.path(mypath);
-    attr(h, colors[p]);
+    attr(h, colors[p])
+    h.transform("S" + scale + "," + scale + ",150,150" + "T" + xpos + "," + ypos);
   }
 }
