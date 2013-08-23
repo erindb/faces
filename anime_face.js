@@ -603,3 +603,101 @@ function drawFace(paper, xpos, ypos, width, expression1, expression2, morphProp)
     h.transform("S" + scale + "," + scale + ",150,150" + "T" + xpos + "," + ypos);
   }
 }
+
+function Face(args) {
+  if (args.paper == null) {
+    console.log("error - need paper for new Face")
+  } else if (args.x == null) {
+    console.log("error - need x position for new Face")
+  } else if (args.y == null) {
+    console.log("error - need y position for new Face")
+  } else if (args.ex1 == null) {
+    console.log("error - need at least one expression for new Face")
+  }
+  var paper = args.paper;
+  var x = args.x;
+  var y = args.y;
+  var width = args.width || 100;
+  var ex1 = args.ex1;
+  var ex2 = args.ex2;
+  var mp = args.mp || 0;
+  var scale = width/faceBoxWidth;
+  var paths;
+  makePaths(ex1, ex2);
+  var faceObjects;
+  drawObjects(paper, x, y);
+  
+  function updateVars(newArgs) {
+    paper = newArgs.paper || paper;
+    x = newArgs.x || x;
+    y = newArgs.y || y;
+    width = newArgs.width || width;
+    ex1 = newArgs.ex1 || ex1;
+    ex2 = newArgs.ex2 || ex2;
+    mp = newArgs.mp || mp;
+    scale = width/faceBoxWidth;
+  }
+
+  this.update = function(newArgs) {
+    updateVars(newArgs);
+    redraw();
+  }
+  
+  this.animate = function(newArgs, ms) {
+    updateVars(newArgs);
+    makePaths();
+    for (var i=0; i<paths.length; i++) {
+      var myobj = faceObjects[i];
+      var mypath = paths[i];
+      myobj.animate({path:mypath}, ms);
+    }
+  }
+  
+  this.hide = function() {
+    var st = paper.set(faceObjects);
+    st.hide();
+  }
+  
+  this.show = function() {
+    var st = paper.set(faceObjects);
+    st.show();
+  }
+
+  function makePaths() {
+    paths = [];
+    for (var i=0; i<pieces.length; i++) {
+      var p=pieces[i]
+      var path1 = expressions[ex1][p];
+      if (ex2 == null) {
+        var mypath = path1;
+      } else {
+        var path2 = expressions[ex2][p];
+        var interPath = intermediate(path1, path2, morphProp);
+        var mypath = interPath;
+      }
+      paths.push(mypath);
+    }
+  }
+
+  function drawObjects() {
+    faceObjects = [];
+    for (var i=0; i<paths.length; i++) {
+      var p=pieces[i]
+      var mypath = paths[i];
+      var h = paper.path(mypath);
+      attr(h, colors[p])
+      h.transform("S" + scale + "," + scale + ",150,150" + "T" + x + "," + y);
+      faceObjects.push(h);
+    }
+  }
+
+  function redraw() {
+    makePaths();
+    for (var i=0; i<faceObjects.length; i++) {
+      var mypath = paths[i];
+      var myobj = faceObjects[i];
+      myobj.attr({path:mypath});
+      myobj.transform("S" + scale + "," + scale + ",150,150" + "T" + x + "," + y);
+    }
+  }
+}
