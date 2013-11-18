@@ -32,12 +32,12 @@
      id="namedview68"
      showgrid="false"
      inkscape:zoom="1"
-     inkscape:cx="199.06333"
-     inkscape:cy="41.936237"
+     inkscape:cx="132.35164"
+     inkscape:cy="49.445539"
      inkscape:window-x="57"
-     inkscape:window-y="14"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer11"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -62,7 +62,7 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="content"
-     style="display:inline">
+     style="display:none">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair-48-7-2"
@@ -168,8 +168,7 @@
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="scared"
-     style="display:none"
-     transform="translate(-4,-27.64246)">
+     style="display:none">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair-48-7-3"
@@ -275,8 +274,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="surprised"
-     style="display:none"
-     transform="translate(-4,-27.64246)">
+     style="display:inline">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair"
@@ -382,8 +380,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="sad"
-     style="display:none"
-     transform="translate(-4,-27.64246)">
+     style="display:none">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair-48"
@@ -489,8 +486,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="neutral"
-     style="display:none"
-     transform="translate(-4,-27.64246)">
+     style="display:none">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair-4"
@@ -599,8 +595,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="happy"
-     style="display:none"
-     transform="translate(-4,-27.64246)">
+     style="display:none">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair-2"
@@ -706,8 +701,7 @@
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="disgusted"
-     style="display:none"
-     transform="translate(-4,-27.64246)">
+     style="display:none">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair-48-7"
@@ -813,8 +807,7 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="disappointed"
-     style="display:none"
-     transform="translate(-4,-27.64246)">
+     style="display:none">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair-6"
@@ -944,7 +937,7 @@
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="mouth-17"
-       d="m 150.67262,288.59809 c 1.78955,-11.01374 16.92736,-30.30287 27.22038,-30.4055 11.49442,-0.47155 31.83582,15.91383 34.23041,29.81972 -5.10407,62.82237 -22.21691,51.95378 -30.40324,52.11144 -8.05851,0.1552 -26.95335,10.64052 -31.04755,-51.52566 z"
+       d="m 150.67262,288.59809 c 1.78955,-11.01374 16.92736,-30.30287 27.22038,-30.4055 11.49442,-0.47155 31.83582,15.91383 34.23041,29.81972 0.39593,65.82237 -22.21691,46.95378 -30.40324,47.11144 -8.05851,0.1552 -30.45335,22.14052 -31.04755,-46.52566 z"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccsc" />
     <path
@@ -1027,7 +1020,7 @@
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="happyBimodal"
-     style="display:none">
+     style="display:inline">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair-8-1"
@@ -1051,7 +1044,7 @@
     <path
        style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="mouth-17-2"
-       d="m 150.67262,288.79809 c 1.78955,-11.01374 16.92736,-30.30287 27.22038,-30.4055 11.49442,-0.47155 31.83582,15.91383 34.23041,29.81972 -6.58899,37.41191 -12.48947,51.44655 -30.40324,52.11144 -18.45772,0.68508 -25.40121,-18.40019 -31.04755,-51.52566 z"
+       d="m 140.17262,277.29809 c 1.78955,-11.01374 27.42736,-18.80287 37.72038,-18.9055 11.49442,-0.47155 39.83582,3.91383 42.23041,17.81972 -4.53368,37.28212 -22.7128,64.02651 -38.40324,64.11144 -16.22337,0.0878 -35.03717,-30.69989 -41.54755,-63.02566 z"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccsc" />
     <path
@@ -1134,8 +1127,7 @@
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="angry"
-     style="display:none"
-     transform="translate(-4,-27.64246)">
+     style="display:none">
     <path
        style="fill:#800080;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
        id="hair-1"
